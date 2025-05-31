@@ -32,3 +32,6 @@ router.get('/my-orders', auth, async (req, res) => {
 module.exports = router;
 
 const orderRoutes = require('./routes/orderRoutes');
+
+res.json({ token, user: { id: user._id, name: user.name, role: user.role } });
+const email = req.body.email.toLowerCase();
